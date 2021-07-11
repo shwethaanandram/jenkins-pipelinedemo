@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+           stage('build') {
+            steps {
+                echo 'buildimf'
+            }
+        }
+    
+            stage('deplo') {
+            steps {
+                echo 'deploting'
+            }
+        }    
+    
+           stage('test') {
+            steps {
+                echo 'testimg'
+            } 
+        }
+            stage('relese') {
+            steps {
+                echo 'relesing'
+        }
+            }
+        }
+    }
+
